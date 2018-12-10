@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Drummer Metronome / Metr&ocirc;nomo Baterista" />
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link rel="stylesheet" type="text/css" media="all" href="./css/css.css?v=1.0.0" />
+		<script type="text/javascript" src="./js/js.js?v=1.0.0"></script>
+		<script type="text/javascript" src="./js/lib/DrummerMetronome.js?v=1.0.0"></script>
+		<title>Drummer Metronome / Metr&ocirc;nomo Baterista</title>
+	</head>
+	<body>
+
+
+      <table class="floater-metronome" class="center" border="0" cellpadding="4" cellspacing="0">
+        <tr>
+            <td rowspan="2">
+              <img src="./img/metronome.png" width="40" height="40" class="metronome" /></td> 
+            </td>
+            <td>
+              <a href="#up" id="bt-speed-up"><div class="arrow-up"></div></a>
+            </td>
+            <td rowspan="2">
+              <span class="display" id="metronome-display">82</span>
+              <audio id="audio-play-1">
+                <source src="./audio/_4.mp3" type="audio/mp3" />
+              </audio>
+            </td>
+            <td rowspan="2">
+              <a href="#play" id="bt-play"><div class="arrow-right"></div></a>
+              <input id="metronome-display-current-beat" class="display-current-beat" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <a href="#down" id="bt-speed-down"><div class="arrow-down"></div></a>
+            </td>
+        </tr>
+      </table>
+
+
+    <pre id="music-pre" data-beats=" 1, 0, 4, 0,   1, 0, 4, 0,   1, 0, 4, 0,   1, 0, 4, 8,   /* intro */ ">
+      <a href="#" title="0">A</a> <a href="#">.</a> <a href="#">.</a> <a href="#">.</a>
+    </pre>
+
+	</body>
+</html>
